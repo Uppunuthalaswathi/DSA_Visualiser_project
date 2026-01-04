@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #020617;
+    color: white;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input, button {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+}
+
+input {
+    width: 100px;
+}
+
+button {
+    background: #22c55e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cache-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.cache {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Node box */
+.node {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 80px;
+    text-align: center;
+    border: 2px solid #38bdf8;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+/* Arrow between nodes */
+.arrow {
+    font-size: 26px;
+    color: #94a3b8;
+}
+
+/* MRU & LRU */
+.mru {
+    border-color: #22c55e;
+}
+
+.lru {
+    border-color: #ef4444;
+}
+
+/* Move animation */
+.move {
+    animation: moveNode 0.4s ease;
+}
+
+@keyframes moveNode {
+    0% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+/* Remove animation */
+.remove {
+    animation: removeNode 0.4s forwards;
+}
+
+@keyframes removeNode {
+    to {
+        opacity: 0;
+        transform: translateY(20px) scale(0.7);
+    }
+}
+
+.label {
+    text-align: center;
+    margin-top: 15px;
+    color: #94a3b8;
+}

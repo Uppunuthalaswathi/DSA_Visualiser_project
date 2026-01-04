@@ -1,0 +1,62 @@
+:root{
+  --bar:#9fb6ff;
+  --compare:#facc15;
+  --swap:#ef4444;
+  --sorted:#22c55e;
+  --pivot:#9c27b0;
+}
+
+body{
+  margin:0;
+  font-family:Segoe UI, Arial;
+  background:#f5f7fa;
+}
+
+header{
+  background:#0b6623;
+  color:#ffd24a;
+  font-size:32px;
+  padding:15px;
+  font-weight:800;
+}
+
+.controls{
+  background:#e6f2e6;
+  padding:10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+button, select, input{
+  padding:8px;
+  border-radius:6px;
+  border:1px solid #bbb;
+}
+
+#bars{
+  height:300px;
+  display:flex;
+  align-items:flex-end;
+  gap:4px;
+  margin:20px;
+}
+
+.bar{
+  flex:1;
+  background:var(--bar);
+  border-radius:4px;
+  display:flex;
+  justify-content:center;
+  font-size:12px;
+}
+
+.info{
+  margin:10px 20px;
+}
+
+#arrayDisplay{
+  margin:10px 20px;
+  font-weight:600;
+  color:#333;
+}

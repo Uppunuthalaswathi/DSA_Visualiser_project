@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LRU Cache – DLL Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>LRU Cache (Doubly Linked List Visualization)</h2>
+
+<div class="controls">
+    <input id="capacity" type="number" placeholder="Capacity" min="1">
+    <button onclick="setCapacity()">Set Capacity</button>
+</div>
+
+<div class="controls">
+    <input id="key" placeholder="Key">
+    <input id="value" placeholder="Value">
+    <button onclick="put()">PUT</button>
+
+    <input id="getKey" placeholder="Get Key">
+    <button onclick="get()">GET</button>
+</div>
+
+<div class="cache-wrapper">
+    <div class="cache" id="cache"></div>
+</div>
+
+<div class="label">⬅️ HEAD (MRU) | TAIL (LRU) ➡️</div>
+
+<script src="script.js"></script>
+</body>
+</html>
